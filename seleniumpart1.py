@@ -14,5 +14,6 @@ time.sleep(5)
 driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span').click()
 driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
 driver.quit()
+print("Test Completed")
 
 
