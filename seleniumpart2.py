@@ -1,7 +1,13 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import unittest
 
+class LoginTest(unittest.TestCase):
+
+    def setUpClass(cls):
+        cls.driver = webdriver.Chrome()
+        cls.driver.maximize_window()
 
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -16,5 +22,3 @@ driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]
 driver.find_element(By.XPATH, '//*[@id="app"]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a').click()
 driver.quit()
 print("Test Completed")
-
-
